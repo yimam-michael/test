@@ -1,0 +1,31 @@
+<br/><br/><br/>
+
+<br/><br/><br/>
+
+<form formGroupName="formGroup">
+    <div>Name: <input formControlName="name" type="text"/></div>
+    <div>Job: <input formControlName="job" type="text"/></div>
+</form>
+<button (click)="submit()" [disabled]="!formGroup.valid">Submit</button>
+<button (click)="submit2()">Submit</button>
+<br/><br/><br/>
+
+<table>
+    <thead>
+        <td></td>
+        <td>ID</td>
+        <td>Email</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of usersList">
+            <td><img src={{user.avatar}} width="40" height="40"></td>
+            <td><img [src]="user.avatar" width="40" height="40"></td>
+            <td>{{user.id}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+        </tr>
+    </tbody>
+</table>

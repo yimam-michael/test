@@ -1,0 +1,36 @@
+<div>{{catFact.fact}}</div>
+<div>{{catFact.length}}</div>
+
+<table>
+    <thead>
+        <th>Fact</th>
+        <th>Length</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of catFactList">
+            <td>{{list.fact}}</td>
+            <td>{{list.length}}</td>
+        </tr>
+    </tbody>
+</table>
+<br/><br/>
+
+<table>
+    <thead>
+        <th>Breed</th>
+        <th>Country</th>
+        <th>Origin</th>
+        <th>Coat</th>
+        <th>Pattern</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let breed of catBreeds">
+            <td>{{breed.breed}}</td>
+            <td>{{breed.country}}</td>
+            <td>{{breed.origin}}</td>
+            <td>{{breed.coat}}</td>
+            <td>{{breed.pattern}}</td>
+        </tr>
+    </tbody>
+</table>
+
