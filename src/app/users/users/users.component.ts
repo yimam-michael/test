@@ -41,6 +41,7 @@ export class UsersComponent implements OnInit {
 
   submit2() {
     console.log(this.formGroup)
+    console.log(this.formGroup.controls)
   }
 
 }

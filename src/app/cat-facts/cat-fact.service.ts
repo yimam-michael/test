@@ -14,6 +14,7 @@ export interface CatBreed {
   origin: string,
   coat: string,
   pattern: string
+  color?: string
 }
 
 export interface CatBreedResponse {
